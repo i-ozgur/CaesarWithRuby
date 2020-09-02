@@ -4,7 +4,7 @@ def caesar_cipher(string = "",num = 0)
 	downCaseUpLim = "z".ord
 	upCaseDownLim = "A".ord
   upCaseUpLim = "Z".ord
-	strArr = string.split('').map! do |char|
+	strArr = string.split('').map do |char|
 		if ((char.ord <= downCaseUpLim) && (char.ord >= downCaseDownLim)) 
 			newOrd = char.ord + num
       while newOrd > downCaseUpLim
